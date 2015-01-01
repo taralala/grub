@@ -1,0 +1,15 @@
+<h1>Grub</h1>
+<%= link_to '+ New Meal', new_meal_path, {class: 'button_new'} %>
+<table>
+  <% @meals.each do |meal| %>
+    <tr>
+      <td><%= meal.name %></td>
+      <td><%= link_to 'Edit', edit_meal_path(meal) %></td>
+      <td>
+        <%= link_to 'Delete', meal_path(meal),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>

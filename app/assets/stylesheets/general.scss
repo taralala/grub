@@ -1,0 +1,11 @@
+$primary: #ccc;
+$secondary: #eee;
+$accent: #4b267e;
+  
+body { 
+ 
+}
+
+.button_new {
+  background-color: lighten( $accent, 20% );
+}
