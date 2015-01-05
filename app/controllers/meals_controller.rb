@@ -6,6 +6,7 @@ class MealsController < ApplicationController
   end
   
   def new
+    @meal = Meal.new({})
   end
   
   def create
